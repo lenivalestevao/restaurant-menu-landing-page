@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saffron &amp; Sage | Seasonal Kitchen</title>
+  <meta name="description" content="Saffron & Sage is a free, multi-page restaurant website template: menu with filters, online ordering, table reservations, gallery, events, journal and more. Plain HTML, CSS and JavaScript.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#/" class="brand">🌿 Saffron &amp; Sage</a>
+    <nav class="nav" id="mainNav" aria-label="Main">
+      <a href="#/menu" data-route="menu">Menu</a>
+      <a href="#/reserve" data-route="reserve">Reservations</a>
+      <a href="#/gallery" data-route="gallery">Gallery</a>
+      <a href="#/events" data-route="events">Events</a>
+      <a href="#/journal" data-route="journal">Journal</a>
+      <a href="#/about" data-route="about">About</a>
+      <a href="#/contact" data-route="contact">Contact</a>
+      <div class="nav-actions-mobile">
+        <a href="#/order" class="btn btn-ghost">Your Order</a>
+        <a href="#/reserve" class="btn btn-primary">Book a Table</a>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a href="#/order" class="btn btn-ghost cart-btn" data-route="order" aria-label="Your order">🛍️ <span id="cartCount" class="count">0</span></a>
+      <a href="#/reserve" class="btn btn-primary">Book a Table</a>
+    </div>
+    <button class="menu-toggle" data-action="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="scrim" data-action="ui-close"></div>
+
+<main id="view"></main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#/" class="brand">🌿 Saffron &amp; Sage</a>
+      <p class="muted">Seasonal cooking from local farms, served warm in the heart of the city.</p>
+    </div>
+    <div>
+      <h4>Eat</h4>
+      <a href="#/menu">Menu</a><a href="#/order">Order Online</a><a href="#/reserve">Reservations</a><a href="#/gift">Gift Cards</a>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <a href="#/about">Our Story</a><a href="#/gallery">Gallery</a><a href="#/events">Private Events</a><a href="#/reviews">Reviews</a>
+    </div>
+    <div>
+      <h4>Find us</h4>
+      <p class="muted">214 Olive Street<br>Springfield, CA 90210<br>(555) 014-2290</p>
+      <a href="#/contact">Hours &amp; contact</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Saffron &amp; Sage. All rights reserved.</span>
+    <span><a href="#/faq">FAQ</a> · <a href="#/privacy">Privacy Policy</a> · <a href="#/terms">Terms</a></span>
+  </div>
+</footer>
+
+<div id="toasts" aria-live="polite"></div>
+<div id="lightbox" class="lightbox" hidden></div>
+<script src="script.js"></script>
+</body>
+</html>
